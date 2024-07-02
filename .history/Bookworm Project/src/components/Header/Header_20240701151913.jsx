@@ -1,9 +1,7 @@
-import styles from './Header.module.css'
-
 export default function Header() {
     return (
         <header>
-            <nav className={styles["site-nav"]}>
+            <nav className="site-nav">
              <img src="../public/images/Logo-Bookworm.png" alt="" />
                     <ul>
                         <li><a href="#"></a>Home</li>

@@ -27,7 +27,7 @@ export default function Add() {
                 <label htmlFor="summary">Summary:</label>
                 <textarea name="summary" id="summary" placeholder="Enter book summary"></textarea>
 
-                <button className={styles["add-book-btn"]} type="submit">Add book</button>
+                <button className="add-book-btn" type="submit">Add book</button>
             </form>
         </section>
     )

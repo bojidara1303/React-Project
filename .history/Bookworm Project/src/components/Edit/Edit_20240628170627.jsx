@@ -1,9 +1,7 @@
-import styles from './Edit.module.css'
-
 export default function Edit(){
     return(
-        <section className={styles["edit-book"]}>
-        <form className={styles["edit"]}>
+        <section className="edit-book">
+        <form className="edit">
             <h1>Edit Book</h1>
 
             <label htmlFor="cover">Cover:</label>
@@ -27,7 +25,7 @@ export default function Edit(){
             <label htmlFor="summary">Summary:</label>
             <textarea name="summary" id="summary"></textarea>
 
-            <button className={styles["edit-book-btn"]} type="submit">Edit book</button>
+            <button className="edit-book-btn" type="submit">Edit book</button>
         </form>
     </section>
     )

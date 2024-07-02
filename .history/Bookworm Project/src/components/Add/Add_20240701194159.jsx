@@ -3,7 +3,7 @@ import styles from './App.module.css'
 export default function Add() {
     return (
         <section className={styles["add-book"]}>
-            <form className={styles["add"]}>
+            <form className="add">
                 <h1>Add Book</h1>
 
                 <label htmlFor="cover">Cover:</label>
@@ -27,7 +27,7 @@ export default function Add() {
                 <label htmlFor="summary">Summary:</label>
                 <textarea name="summary" id="summary" placeholder="Enter book summary"></textarea>
 
-                <button className={styles["add-book-btn"]} type="submit">Add book</button>
+                <button className="add-book-btn" type="submit">Add book</button>
             </form>
         </section>
     )

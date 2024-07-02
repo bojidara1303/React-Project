@@ -16,8 +16,8 @@ export default function Details() {
                 originally released in six volumes before being republished as a single-volume work. The book is an example
                 of magical realism.</p>
             <div className={styles["btn-container"]}>
-                <button className={styles["edit-book btn"]}>Edit book</button>
-                <button className={styles["del-book btn"]}>Delete book</button>
+                <button className="edit-book btn">Edit book</button>
+                <button className="del-book btn">Delete book</button>
             </div>
         </section>
     )

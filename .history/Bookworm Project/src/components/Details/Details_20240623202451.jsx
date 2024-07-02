@@ -1,8 +1,6 @@
-import styles from './Details.module.css'
-
 export default function Details() {
     return (
-        <section className={styles["book-details"]}>
+        <section id="book-details">
             <img src="./public/images/Green Mile.jpg" alt="Green Mile" />
             <p className="book-title"><span>Title:</span> The Green Mile</p>
             <p className="book-author"><span>Author:</span> Stephen King</p>
@@ -15,9 +13,9 @@ export default function Details() {
                 Coffey, an unusual inmate who displays inexplicable healing and empathetic abilities. The serial novel was
                 originally released in six volumes before being republished as a single-volume work. The book is an example
                 of magical realism.</p>
-            <div className={styles["btn-container"]}>
-                <button className={styles["edit-book btn"]}>Edit book</button>
-                <button className={styles["del-book btn"]}>Delete book</button>
+            <div className="btn-container">
+                <button className="edit-book btn">Edit book</button>
+                <button className="del-book btn">Delete book</button>
             </div>
         </section>
     )

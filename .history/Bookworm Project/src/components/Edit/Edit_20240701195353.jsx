@@ -27,7 +27,7 @@ export default function Edit(){
             <label htmlFor="summary">Summary:</label>
             <textarea name="summary" id="summary"></textarea>
 
-            <button className={styles["edit-book-btn"]} type="submit">Edit book</button>
+            <button className="edit-book-btn" type="submit">Edit book</button>
         </form>
     </section>
     )
