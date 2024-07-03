@@ -1,0 +1,13 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+
+/* Add / Edit */
+
+#add h1, #edit h1 {
+    font-size: 30px;
+}
+
+.add-book-btn, .edit-book-btn {
+    font-size: 15px;
+}

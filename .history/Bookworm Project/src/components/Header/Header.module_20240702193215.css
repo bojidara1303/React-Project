@@ -1,0 +1,36 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px 0 50px;
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 5px;
+}
+
+.site-nav img {
+    width: 150px;
+}
+
+.site-nav ul li {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.site-nav ul li {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home:hover {
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid rgb(40, 180, 114);
+    cursor: pointer;
+    color: rgb(40, 180, 114);
+}

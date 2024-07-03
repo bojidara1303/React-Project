@@ -1,0 +1,75 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+
+/* Login */
+
+.to-register {
+    font-size: 12px;
+}
+
+.login-btn {
+    font-size: 15px;
+}
+
+
+/* Register */
+
+.to-login {
+    font-size: 8px;
+}
+
+.register-btn {
+    font-size: 15px;
+}
+
+/* 404 */
+
+.error-title {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.error-par {
+    font-size: 25px;
+}
+
+.back-home {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Details */
+
+.btn-container .btn {
+    font-size: 15px;
+}
+
+/* Add / Edit */
+
+#add h1, #edit h1 {
+    font-size: 30px;
+}
+
+.add-book-btn, .edit-book-btn {
+    font-size: 15px;
+}
+
+/* Catalog */
+
+.book-catalog-heading {
+    font-size: 30px;
+}
+
+.book h1 {
+    font-size: 20px;
+}
+
+.book h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.show-details {
+    font-size: 14px;
+}

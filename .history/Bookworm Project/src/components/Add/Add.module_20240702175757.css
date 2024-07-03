@@ -1,0 +1,67 @@
+.add-book {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(40, 180, 114);
+    border-image: initial;
+    border-radius: 15px;
+    padding: 20px 0px;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+}
+
+.add h1 {
+    color: rgb(40, 180, 114);
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+.add-book label {
+    justify-content: center;
+}
+
+.add-book input {
+    margin-bottom: 15px;
+    padding: 8px 0px 8px 8px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(40, 180, 114);
+    border-image: initial;
+}
+
+.add-book label, .add-book input {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-book textarea {
+    font-family: 'Poppins', serif;
+    margin-bottom: 15px;
+    padding: 8px 120px 90px 10px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(40, 180, 114);
+    border-image: initial;
+}
+
+.add-book-btn {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    margin: 0px auto;
+    font-size: 15px;
+}
+

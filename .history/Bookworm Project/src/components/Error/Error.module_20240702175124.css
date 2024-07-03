@@ -1,0 +1,32 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-page img {
+    width: 300px;
+    padding-top: 40px;
+}
+
+.error-title {
+    color: rgb(40, 180, 114);
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.error-par {
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+.back-home {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    padding: 15px 25px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 20px;
+}

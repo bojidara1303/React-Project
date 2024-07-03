@@ -1,0 +1,38 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+
+/* Details */
+
+.btn-container .btn {
+    font-size: 15px;
+}
+
+/* Add / Edit */
+
+#add h1, #edit h1 {
+    font-size: 30px;
+}
+
+.add-book-btn, .edit-book-btn {
+    font-size: 15px;
+}
+
+/* Catalog */
+
+.book-catalog-heading {
+    font-size: 30px;
+}
+
+.book h1 {
+    font-size: 20px;
+}
+
+.book h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.show-details {
+    font-size: 14px;
+}

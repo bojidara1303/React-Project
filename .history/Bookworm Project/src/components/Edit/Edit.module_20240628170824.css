@@ -1,0 +1,60 @@
+.edit-book {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(40, 180, 114);
+    border-radius: 15px;
+    padding: 20px 0px;
+}
+
+.edit {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-book h1 {
+    color: rgb(40, 180, 114);
+    padding-bottom: 15px;
+}
+
+.edit-book label {
+    justify-content: center;
+}
+
+.edit-book input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(40, 180, 114);
+}
+
+.edit-book label, .edit-book input {
+    display: flex;
+    flex-direction: row;
+}
+
+.edit-book textarea {
+    margin-bottom: 15px;
+    padding: 8px 120px 90px 10px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: rgb(40, 180, 114);
+}
+
+.edit-book-btn {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    margin: 0px auto;
+}
+
