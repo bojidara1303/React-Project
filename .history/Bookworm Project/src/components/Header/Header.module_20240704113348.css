@@ -14,27 +14,24 @@
     width: 150px;
 }
 
-.site-nav ul li{
+/* .site-nav ul li {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    cursor: pointer;
     list-style: none;
-}
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+} */
 
 .nav-link {
     background-color: rgb(40, 180, 114);
     color: white;
     cursor: pointer;
+    list-style: none;
     padding: 10px 15px;
     font-weight: bold;
     text-decoration: none;
-}
-
-.nav-link:hover {
-    background-color: white;
-    color: rgb(40, 180, 114);
-    cursor: pointer;
-    padding: 8px 13px;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid rgb(40, 180, 114);
 }
 
 

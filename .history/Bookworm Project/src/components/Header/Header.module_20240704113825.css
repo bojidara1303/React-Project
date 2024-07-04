@@ -14,6 +14,16 @@
     width: 150px;
 }
 
+/* .site-nav ul li {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+} */
+
 .site-nav ul li{
     list-style: none;
 }
