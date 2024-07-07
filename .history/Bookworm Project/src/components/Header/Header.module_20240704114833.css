@@ -1,0 +1,41 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 0 30px;
+    background-color: rgb(54, 248, 154);
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 5px;
+}
+
+.site-nav img {
+    width: 150px;
+}
+
+.site-nav ul li{
+    list-style: none;
+}
+
+.nav-link {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: rgb(40, 180, 114);
+    cursor: pointer;
+    padding: 8px 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid rgb(40, 180, 114);
+}
+
+
