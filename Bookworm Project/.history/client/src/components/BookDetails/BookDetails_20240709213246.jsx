@@ -26,11 +26,11 @@ export default function BookDetails() {
                     <p className="book-pages"><span>Pages:</span> {book.pages} </p>
                     <p className="book-publisher"><span>Publisher:</span> {book.publisher} </p>
                     <p className="book-summary"><span>Summary:</span> {book.summary} </p>
+                </div>
                     <div className={styles["btn-container"]}>
                         <button className={styles["edit-book"]}>Edit book</button>
                         <button className={styles["del-book"]}>Delete book</button>
                     </div>
-                </div>
             </section >
         </div >
     )

@@ -15,6 +15,12 @@
     height: 480px;
 }
 
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .book-info p span {
     font-weight: bold;
     color: rgb(40, 180, 114);

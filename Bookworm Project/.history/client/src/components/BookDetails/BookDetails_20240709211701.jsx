@@ -19,7 +19,7 @@ export default function BookDetails() {
                     <img src={book.cover} alt={book.title} />
                 </div>
                 <div className={styles["book-info"]}>
-                    <p className={styles["book-title"]}> {book.title}</p> 
+                    <p className="book-title"><span>Title:</span> {book.title}</p>
                     <p className="book-author"><span>Author:</span> {book.author} </p>
                     <p className="book-genre"><span>Genre:</span> {book.genre} </p>
                     <p className="book-year"><span>Year:</span> {book.year} </p>

@@ -1,0 +1,50 @@
+.book-details {
+    text-align: center;
+    width: 500px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(40, 180, 114);
+    border-image: initial;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+.book-details img {
+    width: 250px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.book-details p span {
+    font-weight: bold;
+    color: rgb(40, 180, 114);
+}
+
+.book-details p {
+   padding-bottom: 5px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.btn-container .btn {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.edit-book {
+    padding: 10px 25px;
+}
+
+.del-book {
+    padding: 10px 20px;
+}
+

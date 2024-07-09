@@ -12,7 +12,7 @@ export default function Book({
             <img src={cover} />
             <h1>{title}</h1>
             <h3>{author}</h3>
-            <button className={styles["show-details"]}><Link className={styles["show-details-link"]} to={`/books/${_id}`}>Show details</Link></button>
+            <button className={styles["show-details"]}>Show details</button>
         </article>
     )
 }

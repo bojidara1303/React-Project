@@ -1,33 +1,32 @@
 .book-details-container {
-    padding: 20px 50px;
+    padding: 20px 0 50px;
 }
 
 .book-details {
-    display: flex;
-    gap: 50px;
-    border: 1px solid rgb(40, 180, 114);
+    text-align: center;
+    width: 500px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(40, 180, 114);
+    border-image: initial;
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
+    margin: 0px auto;
 }
 
-.book-img img {
-    width: 350px;
-    height: 480px;
+.book-details img {
+    width: 250px;
+    height: auto;
+    padding-bottom: 10px;
 }
 
-.book-info p span {
+.book-details p span {
     font-weight: bold;
     color: rgb(40, 180, 114);
 }
 
-.book-info p {
+.book-details p {
     padding-bottom: 5px;
-}
-
-.book-title {
-    color: rgb(40, 180, 114);
-    font-weight: bold;
-    font-size: 30px;
 }
 
 .btn-container {
@@ -35,7 +34,6 @@
     justify-content: center;
     padding-top: 30px;
     gap: 30px;
-    margin: 0 auto;
 }
 
 .btn {
@@ -47,7 +45,7 @@
 }
 
 .edit-book {
-    padding: 8px 25px;
+    padding: 10px 25px;
     background-color: rgb(40, 180, 114);
     color: white;
     border: none;
@@ -56,7 +54,7 @@
 }
 
 .del-book {
-    padding: 8px 20px;
+    padding: 10px 20px;
     background-color: rgb(40, 180, 114);
     color: white;
     border: none;

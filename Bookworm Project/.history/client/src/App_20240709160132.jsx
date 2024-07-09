@@ -6,7 +6,7 @@ import Login from './components/Login/Login'
 import Error from './components/Error/Error'
 import Home from './components/Home/Home'
 import AllBooks from './components/AllBooks/AllBooks'
-// import Book from './components/Book/Book'
+import Book from './components/Book/Book'
 import AddBook from './components/AddBook/AddBook'
 import BookDetails from './components/BookDetails/BookDetails'
 

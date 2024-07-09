@@ -30,6 +30,7 @@
 
 .show-details {
     background-color: rgb(40, 180, 114);
+    /* color: white; */
     border: none;
     padding: 10px 20px;
     border-radius: 15px;
@@ -38,6 +39,7 @@
 
 .show-details-link{
     color: white;
+    font-weight: bold;
     font-size: 15px;
     text-decoration: none;
 }

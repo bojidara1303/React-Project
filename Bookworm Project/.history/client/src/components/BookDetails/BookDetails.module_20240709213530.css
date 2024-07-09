@@ -8,23 +8,31 @@
     border: 1px solid rgb(40, 180, 114);
     border-radius: 15px;
     padding: 30px;
+    margin: 0px auto;
 }
 
-.book-img img {
+.book-details img {
     width: 350px;
-    height: 480px;
+    height: 500px;
+    /* height: auto; */
+    padding-bottom: 10px;
 }
 
-.book-info p span {
+.book-details p span {
     font-weight: bold;
     color: rgb(40, 180, 114);
 }
 
-.book-info p {
+.book-details p {
     padding-bottom: 5px;
 }
 
-.book-title {
+.book-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-title{
     color: rgb(40, 180, 114);
     font-weight: bold;
     font-size: 30px;

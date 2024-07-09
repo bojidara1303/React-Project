@@ -28,6 +28,5 @@ export const getOneBook = async (id) => {
     });
 
     const result = await response.json();
-    return result;
 }
 

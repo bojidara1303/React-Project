@@ -23,11 +23,6 @@ export const getAllBooks = async () => {
 };
 
 export const getOneBook = async (id) => {
-    const response = await fetch(`${BASE_URL}/books/${id}`, {
-        method: 'GET'
-    });
 
-    const result = await response.json();
-    return result;
 }
 
