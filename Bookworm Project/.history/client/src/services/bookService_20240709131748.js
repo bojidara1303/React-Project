@@ -15,9 +15,12 @@ export const createBook = async (bookData) => {
 
 export const getAllBooks = async () => {
     const response = await fetch(`${BASE_URL}/books`, {
-        method: 'GET'
+        method: 'GET',
+        headers: {
+            'content-type': 'application/json'
+        }
     });
 
     const result = await response.json();
-    return Object.values(result);
+    return result;
 }

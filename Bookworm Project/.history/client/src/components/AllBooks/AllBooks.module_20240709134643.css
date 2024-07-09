@@ -11,6 +11,6 @@
 }
 
 .no-books{
-  text-align: center;
-  padding: 20px 0 249px;
+    text-align: center;
+    justify-content: center;
 }

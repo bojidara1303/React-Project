@@ -19,5 +19,5 @@ export const getAllBooks = async () => {
     });
 
     const result = await response.json();
-    return Object.values(result);
+    return result;
 }

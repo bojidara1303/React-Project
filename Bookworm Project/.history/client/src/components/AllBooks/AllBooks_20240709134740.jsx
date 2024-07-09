@@ -8,10 +8,10 @@ import { getAllBooks } from '../../services/bookService';
 export default function AllBooks() {
     const [books, setBooks] = useState([]);
 
-    useEffect(() => {
-        getAllBooks()
-            .then(result => setBooks(result))
-    }, [])
+    // useEffect(() => {
+    //     getAllBooks()
+    //         .then(result => setBooks(result))
+    // }, [])
 
     return (
         <section className={styles["book-catalog"]}>

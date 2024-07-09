@@ -16,13 +16,10 @@ export default function AllBooks() {
     return (
         <section className={styles["book-catalog"]}>
             <h1 className={styles["book-catalog-heading"]}>All Books</h1>
-
             {books.map(book => (
-                <Book key={book._id} {...book} />
+                <Book {...book} />
+
             ))}
-
-            {books.length === 0 && <h1 className={styles["no-books"]}>No books added yet</h1>}
-
         </section>
     )
 }

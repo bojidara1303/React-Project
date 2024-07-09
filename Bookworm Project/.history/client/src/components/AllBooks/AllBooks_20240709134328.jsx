@@ -21,7 +21,7 @@ export default function AllBooks() {
                 <Book key={book._id} {...book} />
             ))}
 
-            {books.length === 0 && <h1 className={styles["no-books"]}>No books added yet</h1>}
+            {books.length === 0 && <h1 className="no-books">No books added yet</h1>}
 
         </section>
     )

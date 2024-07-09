@@ -1,20 +1,13 @@
 import styles from './AddBook.module.css';
 import { createBook } from '../../services/bookService';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 export default function AddBook() {
-    const navigate = useNavigate();
-
     const addBookSubmit = async (e) => {
         e.preventDefault();
 
         const bookData = Object.fromEntries(new FormData(e.currentTarget));
-        try {
-            await createBook(bookData)
-            navigate('/books');
-        } catch (err) {
-            console.log(err);
-        }
+        navigate('/books')
     }
 
     return (
