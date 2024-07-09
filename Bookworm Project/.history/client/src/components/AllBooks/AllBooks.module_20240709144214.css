@@ -1,9 +1,8 @@
 .book-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 20px;
-    padding: 0 22px;
 }
 
 .book-catalog {

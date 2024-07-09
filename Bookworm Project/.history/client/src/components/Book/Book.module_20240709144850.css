@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     width: 200px;
-    height: 420px;
-    border: 1px solid rgb(40, 180, 114);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(40, 180, 114);
+    border-image: initial;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .book img {
