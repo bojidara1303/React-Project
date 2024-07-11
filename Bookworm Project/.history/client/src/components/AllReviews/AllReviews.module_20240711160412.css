@@ -1,0 +1,11 @@
+.review-list-heading {
+    text-align: center;
+    padding: 50px 0 30px;
+    color: rgb(40, 180, 114);
+    font-weight: 700;
+}
+
+.write-review {
+    display: flex;
+    flex-direction: column;
+}

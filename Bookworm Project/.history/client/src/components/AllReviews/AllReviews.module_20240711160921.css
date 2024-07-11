@@ -1,0 +1,34 @@
+.review-list-heading {
+    text-align: center;
+    padding: 50px 0 30px;
+    color: rgb(40, 180, 114);
+    font-weight: 700;
+}
+
+.write-review {
+    display: flex;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.review-form textarea {
+    width: 700px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid rgb(40, 180, 114);
+    margin-bottom: 30px;
+}
+
+.add-review {
+    width: 200px;
+    border: none;
+    background-color: rgb(40, 180, 114);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 200px;
+}
