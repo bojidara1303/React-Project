@@ -35,6 +35,11 @@
     margin: 0 auto;
 }
 
+.review-form input{
+    width: 200px;
+    padding-bottom: 15px;
+}
+
 
 /* Single review */
 

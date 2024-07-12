@@ -1,13 +1,13 @@
 const BASE_URL = 'http://localhost:3030/jsonstore/reviews';
 
 
-export const createReview = async (bookId, username, review) => {
+export const createReview =async (id, username, text ) => {
     const response = await fetch(`${BASE_URL}`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
         },
-        body: JSON.stringify({ bookId, username, review})
+        body: JSON.stringify(id, username, text )
     });
 
     const result = await response.json();

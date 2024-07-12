@@ -3,7 +3,6 @@ import styles from './BookDetails.module.css';
 import { useEffect, useState } from 'react';
 import { createReview } from '../../services/reviewService';
 import { getOneBook } from '../../services/bookService';
-import Review from '../Review/Review';
 
 
 export default function BookDetails() {
@@ -56,9 +55,9 @@ export default function BookDetails() {
             {/* Reviews section */}
 
             <section className={styles["all-reviews"]}>
-                <h1 className={styles["write-review-heading"]}>Write a review</h1>
 
                 <article className={styles["write-review"]}>
+                    <h1 className={styles["write-review-heading"]}>Write a review</h1>
                     <form className={styles["review-form"]} onSubmit={addReviewHandler}>
                         <input type="text" name="username" placeholder="Enter username" />
                         <textarea name="review" id="review" placeholder="Enter your review"></textarea>
@@ -71,7 +70,12 @@ export default function BookDetails() {
 
                     {/* Single review */}
 
-                    <Review />
+                    <article className={styles["singe-review"]}>
+                        <p className={styles["review-author"]}>username</p>
+                        <p className={styles["review-content"]}>It tells the story of death row supervisor Paul
+                            Edgecombe's encounter with John Coffey, an unusual inmate who displays inexplicable
+                            healing and empathetic abilities. The book is an example of magical realism.</p>
+                    </article>
 
                 </div>
             </section>

@@ -22,8 +22,8 @@ export const getAllBooks = async () => {
     return Object.values(result);
 };
 
-export const getOneBook = async (bookId) => {
-    const response = await fetch(`${BASE_URL}/books/${bookId}`, {
+export const getOneBook = async (id) => {
+    const response = await fetch(`${BASE_URL}/books/${id}`, {
         method: 'GET'
     });
 

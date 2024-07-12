@@ -1,5 +1,3 @@
-import styles from './Review.module.css'
-
 export default function Review() {
     return (
 

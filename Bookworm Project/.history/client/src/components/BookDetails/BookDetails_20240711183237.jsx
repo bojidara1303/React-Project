@@ -1,10 +1,9 @@
 import { useParams } from 'react-router-dom';
 import styles from './BookDetails.module.css';
 import { useEffect, useState } from 'react';
-import { createReview } from '../../services/reviewService';
 import { getOneBook } from '../../services/bookService';
-import Review from '../Review/Review';
-
+import {  } from '../../services/reviewService';
+import AllReviews from '../AllReviews/AllReviews';
 
 export default function BookDetails() {
     const [book, setBook] = useState({})
@@ -15,19 +14,8 @@ export default function BookDetails() {
             .then(setBook);
     }, [bookId]);
 
+    const addReviewHandler = () => {
 
-    const addReviewHandler = async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(e.currentTarget);
-
-        const newReview = await createReview(
-            bookId,
-            formData.get('username'),
-            formData.get('review')
-        );
-
-        console.log(newReview);
     }
 
     return (
@@ -53,28 +41,7 @@ export default function BookDetails() {
                 </section >
             </div >
 
-            {/* Reviews section */}
-
-            <section className={styles["all-reviews"]}>
-                <h1 className={styles["write-review-heading"]}>Write a review</h1>
-
-                <article className={styles["write-review"]}>
-                    <form className={styles["review-form"]} onSubmit={addReviewHandler}>
-                        <input type="text" name="username" placeholder="Enter username" />
-                        <textarea name="review" id="review" placeholder="Enter your review"></textarea>
-                        <button className={styles["add-review"]}>Add your review</button>
-                    </form>
-                </article>
-
-                <div className={styles["reviews-container"]}>
-                    <h1 className={styles["review-list-heading"]}>All reviews</h1>
-
-                    {/* Single review */}
-
-                    <Review />
-
-                </div>
-            </section>
+            <AllReviews />
         </>
     )
 }

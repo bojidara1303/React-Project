@@ -66,26 +66,9 @@
 
 /* Review */
 
-.reviews-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 50px;
-}
-
-.review-list-heading{
+.review-list-heading {
     text-align: center;
-    padding: 30px 0 30px;
-    color: rgb(40, 180, 114);
-    font-weight: 700;
-    border-top: 1px solid rgb(40, 180, 114);
-    width: 500px;
-    margin: 0 auto;
-}
-
-.write-review-heading {
-    text-align: center;
-    padding: 30px 0 30px;
+    padding: 50px 0 30px;
     color: rgb(40, 180, 114);
     font-weight: 700;
 }

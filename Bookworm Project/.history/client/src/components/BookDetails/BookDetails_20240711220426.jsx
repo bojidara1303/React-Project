@@ -71,7 +71,7 @@ export default function BookDetails() {
 
                     {/* Single review */}
 
-                    <Review />
+                    <Review/>
 
                 </div>
             </section>

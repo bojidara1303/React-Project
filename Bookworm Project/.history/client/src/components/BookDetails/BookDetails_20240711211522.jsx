@@ -1,20 +1,57 @@
-import styles from './AllReviews.module.css';
+import { useParams } from 'react-router-dom';
+import styles from './BookDetails.module.css';
+import { useEffect, useState } from 'react';
+import { getOneBook } from '../../services/bookService';
+import AllReviews from '../AllReviews/AllReviews';
 
-export default function AllReviews() {
+
+export default function BookDetails() {
+    const [book, setBook] = useState({})
+    const { id } = useParams();
+
+    useEffect(() => {
+        getOneBook(id)
+            .then(setBook);
+    }, [id]);
+
+
+
     return (
+        <>
+            <div className={styles["book-details-container"]}>
+                <section className={styles["book-details"]}>
+                    <div className={styles["book-img"]}>
+                        <img src={book.cover} alt={book.title} />
+                    </div>
+                    <div className={styles["book-info"]}>
+                        <p className={styles["book-title"]}> {book.title}</p>
+                        <p className="book-author"><span>Author:</span> {book.author} </p>
+                        <p className="book-genre"><span>Genre:</span> {book.genre} </p>
+                        <p className="book-year"><span>Year:</span> {book.year} </p>
+                        <p className="book-pages"><span>Pages:</span> {book.pages} </p>
+                        <p className="book-publisher"><span>Publisher:</span> {book.publisher} </p>
+                        <p className="book-summary"><span>Summary:</span> {book.summary} </p>
+                        <div className={styles["btn-container"]}>
+                            <button className={styles["edit-book"]}>Edit book</button>
+                            <button className={styles["del-book"]}>Delete book</button>
+                        </div>
+                    </div>
+                </section >
+            </div >
 
-        <section className={styles["all-reviews"]}>
-       <h1 className={styles["review-list-heading"]}>Write a review</h1>
+            <section className={styles["all-reviews"]}>
+            <h1 className={styles["review-list-heading"]}>Write a review</h1>
 
             <article className={styles["write-review"]}>
-                <form className={styles["review-form"]}>
+                <form className={styles["review-form"]} onSubmit={addReviewHandler}>
+                    <input type="text" name="username" placeholder="Enter username" />
                     <textarea name="review" id="review" placeholder="Enter your review"></textarea>
                     <button className={styles["add-review"]}>Add your review</button>
                 </form>
             </article>
 
             <div className={styles["reviews-container"]}>
-            <h1 className={styles["review-list-heading"]}>All reviews</h1>
+                <h1 className={styles["review-list-heading"]}>All reviews</h1>
 
                 <article className={styles["singe-review"]}>
                     <p className={styles["review-author"]}>username</p>
@@ -45,5 +82,6 @@ export default function AllReviews() {
                 </article>
             </div>
         </section>
+        </>
     )
 }

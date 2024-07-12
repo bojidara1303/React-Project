@@ -5,14 +5,14 @@ export default function Book({
     author,
     cover,
     title,
-    _id
+    bookId
 }) {
     return (
         <article className={styles["book"]}>
-            <Link className={styles["show-details-link"]} to={`/books/${_id}`}><img src={cover} /></Link>
+            <img src={cover} />
             <h1>{title}</h1>
             <h3>{author}</h3>
-            <button className={styles["show-details"]}><Link className={styles["show-details-link"]} to={`/books/${_id}`}>Show details</Link></button>
+            <button className={styles["show-details"]}><Link className={styles["show-details-link"]} to={`/books/${bookId}`}>Show details</Link></button>
         </article>
     )
 }
