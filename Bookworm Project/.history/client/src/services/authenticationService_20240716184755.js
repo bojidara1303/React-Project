@@ -9,15 +9,6 @@ export const login = async (email, password) => {
         body: JSON.stringify({ email, password })
     });
 
-    const accessToken = localStorage.getItem('accessToken');
-
-    if (accessToken) {
-        headers = {
-            ...headers,
-            'X-Authorization': accessToken
-        }
-    }
-
     const result = await response.json();
     return result;
 }
@@ -43,7 +34,7 @@ export const logout = async () => {
         }
     });
 
-    if (response.status === '204') {
+    if (response.status === '204'){
         return {};
     }
 }

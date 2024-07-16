@@ -12,8 +12,6 @@ import Home from './components/Home/Home'
 import AllBooks from './components/AllBooks/AllBooks'
 import AddBook from './components/AddBook/AddBook'
 import BookDetails from './components/BookDetails/BookDetails'
-import Logout from './components/Logout/Logout';
-
 import AuthenticationContext from './contexts/authenticationContext'
 
 function App() {
@@ -24,28 +22,19 @@ function App() {
     const result = await login(email, password);
 
     setAuthentication(result)
-    localStorage.setItem('accessToken', result.accessToken)
     navigate('/')
   }
 
   const registerSubmitHandler = async ({ username, email, password }) => {
     const result = await register(username, email, password);
 
-    setAuthentication(result);
-    localStorage.setItem('accessToken', result.accessToken);
-    navigate('/');
+    setAuthentication(result)
+    navigate('/')
   }
-
-  const logoutHandler = () => {
-    setAuthentication({});
-    localStorage.removeItem('accessToken')
-  }
-
 
   const values = {
     loginSubmitHandler,
     registerSubmitHandler,
-    logoutHandler,
     username: authentication.username,
     email: authentication.email,
     isAuthenticated: !!authentication.accessToken
@@ -61,7 +50,6 @@ function App() {
           <Route path='/add-book' element={<AddBook />}></Route>
           <Route path='/register' element={<Register />}></Route>
           <Route path='/login' element={<Login />}></Route>
-          <Route path='/logout' element={<Logout />}></Route>
           <Route path='/books' element={<AllBooks />}></Route>
           <Route path='/books/:bookId' element={<BookDetails />}></Route>
           <Route path='*' element={<Error />} />

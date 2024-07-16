@@ -24,21 +24,18 @@ function App() {
     const result = await login(email, password);
 
     setAuthentication(result)
-    localStorage.setItem('accessToken', result.accessToken)
     navigate('/')
   }
 
   const registerSubmitHandler = async ({ username, email, password }) => {
     const result = await register(username, email, password);
 
-    setAuthentication(result);
-    localStorage.setItem('accessToken', result.accessToken);
-    navigate('/');
+    setAuthentication(result)
+    navigate('/')
   }
 
   const logoutHandler = () => {
-    setAuthentication({});
-    localStorage.removeItem('accessToken')
+    setAuthentication({})
   }
 
 

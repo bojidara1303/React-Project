@@ -24,21 +24,18 @@ function App() {
     const result = await login(email, password);
 
     setAuthentication(result)
-    localStorage.setItem('accessToken', result.accessToken)
     navigate('/')
   }
 
   const registerSubmitHandler = async ({ username, email, password }) => {
     const result = await register(username, email, password);
 
-    setAuthentication(result);
-    localStorage.setItem('accessToken', result.accessToken);
-    navigate('/');
+    setAuthentication(result)
+    navigate('/')
   }
 
   const logoutHandler = () => {
-    setAuthentication({});
-    localStorage.removeItem('accessToken')
+    setAuthentication({})
   }
 
 
@@ -61,7 +58,7 @@ function App() {
           <Route path='/add-book' element={<AddBook />}></Route>
           <Route path='/register' element={<Register />}></Route>
           <Route path='/login' element={<Login />}></Route>
-          <Route path='/logout' element={<Logout />}></Route>
+          <Route path='/' element={<Logout />}></Route>
           <Route path='/books' element={<AllBooks />}></Route>
           <Route path='/books/:bookId' element={<BookDetails />}></Route>
           <Route path='*' element={<Error />} />
