@@ -1,4 +1,4 @@
-.login-page-container {
+.login-page-container{
     padding: 50px 0 50px;
 }
 
@@ -38,7 +38,7 @@
     border-image: initial;
 }
 
-.login-left input::placeholder {
+.login-left input::placeholder{
     font-size: 13px;
 }
 
@@ -51,7 +51,7 @@
     background-color: rgb(40, 180, 114);
     color: white;
     width: 100px;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-style: none;
     border-radius: 15px;
     margin: 0px auto;

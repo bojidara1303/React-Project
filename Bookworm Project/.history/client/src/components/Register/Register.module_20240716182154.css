@@ -1,33 +1,43 @@
-.login-page-container {
+.register-page-container {
     padding: 50px 0 50px;
 }
 
-.login {
+.register {
     display: flex;
     width: 800px;
-    height: 400px;
-    border: 1px solid rgb(40, 180, 11);
+    height: 450px;
+    border: 1px solid rgb(40, 180, 114);
     border-radius: 10px;
     margin: 0px auto;
+    align-items: center;
 }
 
-.login-left {
+.register-left img {
+    width: 400px;
+    height: 395px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.register-right {
     display: flex;
     flex-direction: column;
     width: 50%;
     text-align: center;
     justify-content: center;
-    padding: 30px;
+    padding: 15px 30px;
 }
 
-.login-left h1 {
-    padding-bottom: 30px;
-    color: rgb(40, 180, 114);
+.register-right h1 {
     font-size: 30px;
+    padding-bottom: 20px;
+    color: rgb(40, 180, 114);
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.login-left input {
+.register-right input {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
     padding: 5px 0px 5px 8px;
@@ -35,35 +45,27 @@
     border-width: 1px;
     border-style: solid;
     border-color: rgb(40, 180, 114);
-    border-image: initial;
 }
 
-.login-left input::placeholder {
+.register-right input::placeholder{
     font-size: 13px;
 }
 
-.to-register {
-    padding-bottom: 10px;
+.to-login {
+    font-size: 12px;
+    margin-top: 0;
+    padding-bottom: 8px;
     font-size: 12px;
 }
 
-.login-btn {
+.register-btn {
     background-color: rgb(40, 180, 114);
     color: white;
     width: 100px;
     padding: 8px 15px;
-    border-style: none;
+    border: none;
     border-radius: 15px;
     margin: 0px auto;
     font-size: 16px;
     cursor: pointer;
-}
-
-.login-right img {
-    width: 400px;
-    height: 395px;
-    object-fit: cover;
-    padding-right: 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }

@@ -25,11 +25,8 @@ function App() {
     navigate('/')
   }
 
-  const registerSubmitHandler = async ({ username, email, password }) => {
-    const result = await register(username, email, password);
-
-    setAuthentication(result)
-    navigate('/')
+  const registerSubmitHandler = async (values) => {
+    const result = await register(email, password);
   }
 
   const values = {

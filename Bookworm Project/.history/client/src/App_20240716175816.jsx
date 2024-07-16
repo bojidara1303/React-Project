@@ -1,7 +1,7 @@
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 
-import { login, register } from './services/authenticationService'
+import { login } from './services/authenticationService'
 
 import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
@@ -25,11 +25,8 @@ function App() {
     navigate('/')
   }
 
-  const registerSubmitHandler = async ({ username, email, password }) => {
-    const result = await register(username, email, password);
-
-    setAuthentication(result)
-    navigate('/')
+  const registerSubmitHandler = async (values) => {
+    console.log(values);
   }
 
   const values = {

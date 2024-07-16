@@ -9,7 +9,6 @@ import useForm from '../../hooks/useForm';
 export default function Register() {
     const { registerSubmitHandler } = useContext(AuthenticationContext);
     const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
-        username: '',
         email: '',
         password: '',
         "confirm-password": ''

@@ -9,7 +9,6 @@ import useForm from '../../hooks/useForm';
 export default function Register() {
     const { registerSubmitHandler } = useContext(AuthenticationContext);
     const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
-        username: '',
         email: '',
         password: '',
         "confirm-password": ''
@@ -24,21 +23,12 @@ export default function Register() {
                     </div>
                     <div className={styles["register-right"]}>
                         <h1>Register</h1>
-
-                        <input
-                            type="text"
-                            name="username"
-                            placeholder="Enter your username"
-                            onChange={onChange}
-                            value={values["username"]}
-                        />
-
                         <input
                             type="text"
                             name="email"
                             placeholder="Enter your email"
                             onChange={onChange}
-                            value={values["email"]}
+                            value={values.email}
                         />
 
                         <input
@@ -46,7 +36,7 @@ export default function Register() {
                             name="password"
                             placeholder="Enter your password"
                             onChange={onChange}
-                            value={values["password"]}
+                            value={values.password}
                         />
 
                         <input
@@ -54,7 +44,7 @@ export default function Register() {
                             name="confirm-password"
                             placeholder="Confirm your password"
                             onChange={onChange}
-                            value={values["confirm-password"]}
+                            value={values.confirm-password}
                         />
 
                         <p className={styles["to-login"]}>If you already have profile click <Link style={{ color: 'rgb(40, 180, 114)' }} to="/login">here</Link>
