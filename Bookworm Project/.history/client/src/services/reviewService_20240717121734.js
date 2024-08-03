@@ -7,22 +7,21 @@ export const createReview = async (bookId, username, review) => {
         headers: {
             'content-type': 'application/json'
         },
-        body: JSON.stringify({ bookId, username, review })
+        body: JSON.stringify({ bookId, username, review})
     });
 
     const result = await response.json();
     return result;
 }
 
-export const getAllReviews = async (bookId) => {
+export const getAllReviews = async (bookId) =>{
     const query = new URLSearchParams({
         where: `bookId="${bookId}"`
     })
-    
     const response = await fetch(`${BASE_URL}`, {
         method: 'GET'
     });
 
     const result = await response.json();
-    return Object.values(result).filter(review => review.bookId === bookId);
+    return Object.values(result).filter(review =>review.bookId === bookId );
 }

@@ -1,7 +1,7 @@
-const BASE_URL = 'http://localhost:3030/data'
+const BASE_URL = 'http://localhost:3030/data/books'
 
 export const createBook = async (bookData) => {
-    const response = await fetch(`${BASE_URL}/books`, {
+    const response = await fetch(`${BASE_URL}`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -14,7 +14,7 @@ export const createBook = async (bookData) => {
 };
 
 export const getAllBooks = async () => {
-    const response = await fetch(`${BASE_URL}/books`, {
+    const response = await fetch(`${BASE_URL}`, {
         method: 'GET'
     });
 
@@ -23,7 +23,7 @@ export const getAllBooks = async () => {
 };
 
 export const getOneBook = async (bookId) => {
-    const response = await fetch(`${BASE_URL}/books/${bookId}`, {
+    const response = await fetch(`${BASE_URL}/${bookId}`, {
         method: 'GET'
     });
 

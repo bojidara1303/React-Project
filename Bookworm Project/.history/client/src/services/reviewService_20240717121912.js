@@ -18,11 +18,11 @@ export const getAllReviews = async (bookId) => {
     const query = new URLSearchParams({
         where: `bookId="${bookId}"`
     })
-    
     const response = await fetch(`${BASE_URL}`, {
         method: 'GET'
     });
 
     const result = await response.json();
-    return Object.values(result).filter(review => review.bookId === bookId);
+    return Object.values(result)
+                 .filter((review) => review.bookId === bookId);
 }

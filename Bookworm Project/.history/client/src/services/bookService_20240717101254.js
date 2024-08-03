@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3030/data'
+const BASE_URL = 'http://localhost:3030/jsonstore'
 
 export const createBook = async (bookData) => {
     const response = await fetch(`${BASE_URL}/books`, {

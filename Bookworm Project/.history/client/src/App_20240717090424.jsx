@@ -19,8 +19,7 @@ import AuthenticationContext from './contexts/authenticationContext'
 function App() {
   const navigate = useNavigate()
   const [authentication, setAuthentication] = useState(() => {
-    localStorage.removeItem('accessToken');
-    return {};
+    localStorage.clear();
   });
 
   const loginSubmitHandler = async ({ email, password }) => {

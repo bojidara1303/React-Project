@@ -14,7 +14,7 @@ export const login = async (email, password) => {
 
     if (accessToken) {
         headers = {
-            ...headers,
+            'content-type': 'application/json',
             'X-Authorization': accessToken
         }
     }
@@ -31,15 +31,6 @@ export const register = async (username, email, password) => {
         },
         body: JSON.stringify({ username, email, password })
     });
-
-    const accessToken = localStorage.getItem('accessToken');
-
-    if (accessToken) {
-        headers = {
-            ...headers,
-            'X-Authorization': accessToken
-        }
-    }
 
     const result = await response.json();
     return result;

@@ -14,7 +14,7 @@ export const login = async (email, password) => {
 
     if (accessToken) {
         headers = {
-            ...headers,
+            'content-type': 'application/json',
             'X-Authorization': accessToken
         }
     }

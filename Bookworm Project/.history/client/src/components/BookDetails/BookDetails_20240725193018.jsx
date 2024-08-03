@@ -1,11 +1,10 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import styles from './BookDetails.module.css';
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createReview, getAllReviews } from '../../services/reviewService';
 import { getOneBook } from '../../services/bookService';
 import Review from '../Review/Review';
 import AuthenticationContext from '../../contexts/authenticationContext';
-
 
 
 export default function BookDetails() {
@@ -34,9 +33,6 @@ export default function BookDetails() {
             formData.get('review')
         );
         setReviews(state => [...state, newReview])
-    }
-    const onDeleteBookClickHandler = (e)=>{
-        
     }
 
     const isOwner = userId === book._ownerId;

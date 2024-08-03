@@ -18,7 +18,6 @@ export const getAllReviews = async (bookId) => {
     const query = new URLSearchParams({
         where: `bookId="${bookId}"`
     })
-    
     const response = await fetch(`${BASE_URL}`, {
         method: 'GET'
     });

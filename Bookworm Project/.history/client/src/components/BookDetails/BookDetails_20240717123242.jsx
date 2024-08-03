@@ -1,15 +1,11 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import styles from './BookDetails.module.css';
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createReview, getAllReviews } from '../../services/reviewService';
 import { getOneBook } from '../../services/bookService';
 import Review from '../Review/Review';
-import AuthenticationContext from '../../contexts/authenticationContext';
-
-
 
 export default function BookDetails() {
-    const { email, userId, username } = useContext(AuthenticationContext)
     const [book, setBook] = useState({});
     const [reviews, setReviews] = useState([]);
     const { bookId } = useParams();
@@ -18,8 +14,8 @@ export default function BookDetails() {
         getOneBook(bookId)
             .then(setBook);
 
-        // getAllReviews(bookId)
-        //     .then(setReviews)
+        getAllReviews(bookId)
+            .then(setReviews)
     }, [bookId]);
 
 
@@ -35,11 +31,6 @@ export default function BookDetails() {
         );
         setReviews(state => [...state, newReview])
     }
-    const onDeleteBookClickHandler = (e)=>{
-        
-    }
-
-    const isOwner = userId === book._ownerId;
 
     return (
         <>
@@ -56,13 +47,10 @@ export default function BookDetails() {
                         <p className="book-pages"><span>Pages:</span> {book.pages} </p>
                         <p className="book-publisher"><span>Publisher:</span> {book.publisher} </p>
                         <p className="book-summary"><span>Summary:</span> {book.summary} </p>
-
-                        {isOwner && (
-                            <div className={styles["btn-container"]}>
-                                <Link to={`/books/${bookId}/edit`}> <button className={styles["edit-book"]}>Edit book</button></Link>
-                                <button className={styles["del-book"]} onClick={onDeleteBookClickHandler}>Delete book</button>
-                            </div>
-                        )}
+                        <div className={styles["btn-container"]}>
+                            <button className={styles["edit-book"]}>Edit book</button>
+                            <button className={styles["del-book"]}>Delete book</button>
+                        </div>
                     </div>
                 </section >
             </div >

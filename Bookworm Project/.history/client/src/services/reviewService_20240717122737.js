@@ -23,6 +23,6 @@ export const getAllReviews = async (bookId) => {
         method: 'GET'
     });
 
-    const result = await response.json();
+    const result = await response.json;
     return Object.values(result).filter(review => review.bookId === bookId);
 }

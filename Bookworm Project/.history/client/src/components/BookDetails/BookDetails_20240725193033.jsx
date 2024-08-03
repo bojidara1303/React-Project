@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import styles from './BookDetails.module.css';
 import { useContext, useEffect, useState } from 'react';
 import { createReview, getAllReviews } from '../../services/reviewService';
@@ -34,9 +34,6 @@ export default function BookDetails() {
             formData.get('review')
         );
         setReviews(state => [...state, newReview])
-    }
-    const onDeleteBookClickHandler = (e)=>{
-        
     }
 
     const isOwner = userId === book._ownerId;

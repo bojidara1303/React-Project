@@ -1342,8 +1342,8 @@
     var seedData = {
         reviews: {
         },
-        books: [
-            {
+        books: {
+            "8cdf80c7-e5fc-4032-ac0c-788fda72a4b0": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
                 "cover": "https://cdn.penguin.co.uk/dam-assets/books/9780241655702/9780241655702-jacket-large.jpg",
                 "title": "Watership Down",
@@ -1356,7 +1356,7 @@
                 "_createdOn": 1721807003438,
                 "_id": "8cdf80c7-e5fc-4032-ac0c-788fda72a4b0"
             },
-            {
+            "d5488cb9-296a-47bb-af71-37ec161ffce6": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
                 "cover": "https://cdn.penguin.co.uk/dam-assets/books/9780099582632/9780099582632-jacket-large.jpg",
                 "title": "Oliver Twist",
@@ -1369,7 +1369,7 @@
                 "_createdOn": 1721807105842,
                 "_id": "d5488cb9-296a-47bb-af71-37ec161ffce6"
             },
-            {
+          "3a9f31a9-b31f-4616-8029-2b113e282e03":  {
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 "cover": "https://cdn.penguin.co.uk/dam-assets/books/9780141048703/9780141048703-jacket-large.jpg",
                 "title": "Think of a Number",
@@ -1382,7 +1382,7 @@
                 "_createdOn": 1721807345589,
                 "_id": "3a9f31a9-b31f-4616-8029-2b113e282e03"
             },
-            {
+          "98e9f955-bd4f-4a88-b8a0-17daa4053552":  {
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 "cover": "https://cdn.penguin.co.uk/dam-assets/books/9780241430934/9780241430934-jacket-large.jpg",
                 "title": "Jane Eyre",
@@ -1395,7 +1395,7 @@
                 "_createdOn": 1721807565737,
                 "_id": "98e9f955-bd4f-4a88-b8a0-17daa4053552"
             },
-            {
+           "4060f583-a987-4163-9b6d-595477867220": {
                 "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
                 "cover": "https://cdn.penguin.co.uk/dam-assets/books/9781529146530/9781529146530-jacket-large.jpg",
                 "title": "Be Useful",
@@ -1409,7 +1409,7 @@
                 "_id": "4060f583-a987-4163-9b6d-595477867220"
             }
 
-        ]
+        }
 
     };
     var rules$1 = {

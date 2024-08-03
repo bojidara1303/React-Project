@@ -8,19 +8,22 @@ export const login = async (email, password) => {
             'content-type': 'application/json'
         },
         body: JSON.stringify({ email, password })
-    })
+    }
 
-    const accessToken = localStorage.getItem('accessToken');
+    
+        const accessToken = localStorage.getItem('accessToken');
 
     if (accessToken) {
         headers = {
-            ...headers,
+            'content-type': 'application/json',
             'X-Authorization': accessToken
         }
     }
-    
-    const result = await response.json();
-    return result;
+    return response
+    );
+
+const result = await response.json();
+return result;
 }
 
 export const register = async (username, email, password) => {
@@ -31,15 +34,6 @@ export const register = async (username, email, password) => {
         },
         body: JSON.stringify({ username, email, password })
     });
-
-    const accessToken = localStorage.getItem('accessToken');
-
-    if (accessToken) {
-        headers = {
-            ...headers,
-            'X-Authorization': accessToken
-        }
-    }
 
     const result = await response.json();
     return result;

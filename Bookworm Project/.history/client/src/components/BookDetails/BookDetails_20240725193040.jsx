@@ -35,9 +35,6 @@ export default function BookDetails() {
         );
         setReviews(state => [...state, newReview])
     }
-    const onDeleteBookClickHandler = (e)=>{
-        
-    }
 
     const isOwner = userId === book._ownerId;
 

@@ -15,10 +15,8 @@ export const createReview = async (bookId, username, review) => {
 }
 
 export const getAllReviews = async (bookId) => {
-    const query = new URLSearchParams({
-        where: `bookId="${bookId}"`
-    })
-    
+    const query = encodeURIComponent(`bookId="${bookId}"`)
+
     const response = await fetch(`${BASE_URL}`, {
         method: 'GET'
     });
