@@ -45,7 +45,7 @@ export const deleteBook = async (bookId) => {
     const response = await fetch(`${BASE_URL}/${bookId}`, {
         method: 'DELETE',
         headers: {
-            'content-type': 'application/json'
+            cons
         }
     })
 }

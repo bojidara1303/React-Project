@@ -1,17 +1,15 @@
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import useForm from '../../hooks/useForm';
-
 import styles from './Login.module.css';
-import AuthenticationContext from '../../contexts/authenticationContext';
-
+import { useForm } from '../../hooks/useForm';
+import { useContext } from 'react';
+import AuthContext from '../../contexts/authContext';
 
 export default function Login() {
-    const { loginSubmitHandler } = useContext(AuthenticationContext)
+    const { loginSubmitHandler } = useContext(AuthContext);
     const { values, onChange, onSubmit } = useForm(loginSubmitHandler, {
         email: '',
-        password: '',
-    });
+        password: ''
+    })
 
     return (
         <div className={styles["login-page-container"]}>
@@ -20,19 +18,22 @@ export default function Login() {
                     <div className={styles["login-left"]}>
                         <h1>Login</h1>
                         <input
-                            type="email"
-                            placeholder="Enter your email"
+                            type="text"
                             name="email"
+                            placeholder="Enter your email"
                             onChange={onChange}
-                            value={values["email"]} />
+                            value={values["email"]}
+                        />
 
                         <input
                             type="password"
-                            placeholder="Enter your password"
                             name="password"
+                            placeholder="Enter your password"
                             onChange={onChange}
-                            value={values["password"]} />
-                        <p className={styles["to-register"]}>If you don't have profile click <Link style={{ color: 'rgb(40, 180, 114)' }} to="/register">here</Link>
+                            value={values["password"]}
+                        />
+
+                        <p className={styles["to-register"]}>If you don't have profile click <Link className={styles['to-register-text']} to="/register">here</Link>
                         </p>
                         <button className={styles["login-btn"]}>Login</button>
                     </div>

@@ -1,5 +1,6 @@
 .register-page-container {
-    padding: 50px 0 50px;
+    padding: 20px 0 50px 0;
+    margin-bottom: 50px;
 }
 
 .register {
@@ -38,22 +39,24 @@
 
 .register-right input {
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding: 5px 0px 5px 8px;
     border-radius: 15px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(40, 180, 114);
+    border: 1px solid rgb(40, 180, 114);
 }
 
-.register-right input::placeholder{
+.register-right input::placeholder {
     font-size: 13px;
 }
 
 .to-login {
     font-size: 12px;
     margin-top: 0;
-    padding-bottom: 8px;
+    padding-bottom: 0;
+}
+
+.to-login-text {
+    color: rgb(40, 180, 114);
     font-size: 12px;
 }
 
@@ -61,7 +64,7 @@
     background-color: rgb(40, 180, 114);
     color: white;
     width: 100px;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border: none;
     border-radius: 15px;
     margin: 0px auto;

@@ -9,7 +9,7 @@ export default function Book({
 }) {
     return (
         <article className={styles["book"]}>
-            <Link className={styles["show-details-link"]} to={`/books/${_id}`}><img src={cover} /></Link>
+            <Link to={`/books/${_id}`}> <img src={cover} /></Link> 
             <h1>{title}</h1>
             <h3>{author}</h3>
             <button className={styles["show-details"]}><Link className={styles["show-details-link"]} to={`/books/${_id}`}>Show details</Link></button>

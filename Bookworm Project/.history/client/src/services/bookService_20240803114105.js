@@ -1,7 +1,7 @@
 const BASE_URL = 'http://localhost:3030/data/books'
 
 export const createBook = async (bookData) => {
-    const response = await fetch({ BASE_URL }, {
+    const response = await fetch({BASE_URL}, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -14,7 +14,7 @@ export const createBook = async (bookData) => {
 };
 
 export const getAllBooks = async () => {
-    const response = await fetch({ BASE_URL }, {
+    const response = await fetch({BASE_URL}, {
         method: 'GET'
     });
 
@@ -31,21 +31,6 @@ export const getOneBook = async (bookId) => {
     return result;
 }
 
-export const editBook = async (bookId, bookData) => {
-    const response = await fetch(`${BASE_URL}/${bookId}`, {
-        method: 'PUT',
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(bookData)
-    })
-}
+export const editBook = async(bookId,bookData) =>{
 
-export const deleteBook = async (bookId) => {
-    const response = await fetch(`${BASE_URL}/${bookId}`, {
-        method: 'DELETE',
-        headers: {
-            'content-type': 'application/json'
-        }
-    })
 }

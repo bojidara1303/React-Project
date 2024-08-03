@@ -7,7 +7,7 @@
 }
 
 .book-catalog {
-    padding: 10px 0 50px;
+    padding: 10px 0 100px;
 }
 
 .book-catalog-heading {
@@ -19,7 +19,8 @@
 }
 
 .no-books{
+  text-align: center;
+  padding: 28px 0 249px;
   margin: 0 auto;
-  padding: 20px 0 265px;
 }
 

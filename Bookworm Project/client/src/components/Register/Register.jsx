@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom'
-import { useContext } from 'react'
-
 import styles from './Register.module.css'
+import { useContext } from 'react'
+import AuthContext from '../../contexts/authContext'
+import { useForm } from '../../hooks/useForm';
 
-import AuthenticationContext from '../../contexts/authenticationContext'
-import useForm from '../../hooks/useForm';
 
 export default function Register() {
-    const { registerSubmitHandler } = useContext(AuthenticationContext);
+    const { registerSubmitHandler } = useContext(AuthContext);
     const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
         username: '',
         email: '',
@@ -24,7 +23,6 @@ export default function Register() {
                     </div>
                     <div className={styles["register-right"]}>
                         <h1>Register</h1>
-
                         <input
                             type="text"
                             name="username"
@@ -56,8 +54,7 @@ export default function Register() {
                             onChange={onChange}
                             value={values["confirm-password"]}
                         />
-
-                        <p className={styles["to-login"]}>If you already have profile click <Link style={{ color: 'rgb(40, 180, 114)' }} to="/login">here</Link>
+                        <p className={styles["to-login"]}>If you already have profile click <Link className={styles['to-login-text']} to="/login">here</Link>
                         </p>
                         <button className={styles["register-btn"]}>Register</button>
                     </div>

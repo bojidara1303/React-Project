@@ -1,42 +1,33 @@
-import { Link, useParams } from 'react-router-dom';
-import styles from './BookDetails.module.css';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
-import { createReview, getAllReviews } from '../../services/reviewService';
-import { getOneBook } from '../../services/bookService';
-import Review from '../Review/Review';
-import AuthenticationContext from '../../contexts/authenticationContext';
 
+import { getOneBook } from '../../services/bookService';
+import AuthContext from '../../contexts/authContext';
+
+import AllReviews from '../AllReviews/AllReviews';
+import styles from './BookDetails.module.css';
 
 
 export default function BookDetails() {
-    const { email, userId, username } = useContext(AuthenticationContext)
+    const { userId } = useContext(AuthContext);
     const [book, setBook] = useState({});
-    const [reviews, setReviews] = useState([]);
     const { bookId } = useParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
         getOneBook(bookId)
             .then(setBook);
 
-        // getAllReviews(bookId)
-        //     .then(setReviews)
     }, [bookId]);
 
+    const onDeleteBookClickHandler = async () => {
+        const isConfirmed = confirm(`Are you sure you want to delete ${book.title}?`)
 
-    const addReviewHandler = async (e) => {
-        e.preventDefault();
+        if (isConfirmed) {
+            await bookService.deleteBook(bookId)
 
-        const formData = new FormData(e.currentTarget);
-
-        const newReview = await createReview(
-            bookId,
-            formData.get('username'),
-            formData.get('review')
-        );
-        setReviews(state => [...state, newReview])
-    }
-    const onDeleteBookClickHandler = (e)=>{
-        
+            navigate('/books')
+        }
     }
 
     const isOwner = userId === book._ownerId;
@@ -69,28 +60,7 @@ export default function BookDetails() {
 
             {/* Reviews section */}
 
-            <section className={styles["all-reviews"]}>
-                <h1 className={styles["write-review-heading"]}>Write a review</h1>
-
-                <article className={styles["write-review"]}>
-                    <form className={styles["review-form"]} onSubmit={addReviewHandler}>
-                        <input type="text" name="username" placeholder="Enter username" />
-                        <textarea name="review" id="review" placeholder="Enter your review"></textarea>
-                        <button className={styles["add-review"]}>Add your review</button>
-                    </form>
-                </article>
-
-                <div className={styles["reviews-container"]}>
-                    <h1 className={styles["review-list-heading"]}>All reviews</h1>
-
-                    {reviews.map(review => (
-                        <Review key={review._id} {...review} />
-                    ))}
-
-                    {reviews.length === 0 && <h1 className={styles["no-reviews"]}>No reviews added yet</h1>}
-
-                </div>
-            </section>
+            <AllReviews />
         </>
     )
 }

@@ -1,12 +1,12 @@
-.login-page-container {
-    padding: 50px 0 50px;
+.login-page-container{
+    padding: 20px 0 50px 0;
 }
 
 .login {
     display: flex;
     width: 800px;
     height: 400px;
-    border: 1px solid rgb(40, 180, 11);
+    border: 1px solid rgb(40, 180, 114);
     border-radius: 10px;
     margin: 0px auto;
 }
@@ -29,21 +29,23 @@
 
 .login-left input {
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding: 5px 0px 5px 8px;
     border-radius: 15px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(40, 180, 114);
-    border-image: initial;
+    border: 1px solid rgb(40, 180, 114);
 }
 
-.login-left input::placeholder {
+.login-left input::placeholder{
     font-size: 13px;
 }
 
 .to-register {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
+    font-size: 12px;
+}
+
+.to-register-text {
+    color: rgb(40, 180, 114);
     font-size: 12px;
 }
 
@@ -51,7 +53,7 @@
     background-color: rgb(40, 180, 114);
     color: white;
     width: 100px;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-style: none;
     border-radius: 15px;
     margin: 0px auto;
