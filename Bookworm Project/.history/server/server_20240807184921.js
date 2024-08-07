@@ -1341,13 +1341,7 @@
     };
     var seedData = {
         reviews: [
-            {
-                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "bookId": "1",
-                "review": "Nice book!",
-                "_createdOn": 1722405608044,
-                "_id": "8e88c3fd-0591-4fe8-a7ca-0ce78a9924ae"
-            }
+           
         ],
         books: [
             {

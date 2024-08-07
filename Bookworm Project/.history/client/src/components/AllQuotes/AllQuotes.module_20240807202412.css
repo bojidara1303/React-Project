@@ -64,24 +64,17 @@
     padding: 0;
 }
 
-.btn-container {
+/* .name-container {
     display: flex;
-    justify-content: right;
-    padding-top: 10px;
-    gap: 15px;
-}
-
-.edit-icon,
-.trash-icon{
-    margin: 0;
-}
+    justify-content: space-between;
+} */
 
 .btn-container i{
     color: rgb(40, 180, 114);
     font-size: 20px;
     cursor: pointer;
-    /* margin: 0; */
-    /* padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 .trash-icon i {

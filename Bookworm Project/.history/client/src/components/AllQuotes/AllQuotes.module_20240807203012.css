@@ -66,7 +66,7 @@
 
 .btn-container {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     padding-top: 10px;
     gap: 15px;
 }

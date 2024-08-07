@@ -66,13 +66,14 @@
 
 .btn-container {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     padding-top: 10px;
     gap: 15px;
 }
 
 .edit-icon,
 .trash-icon{
+    padding: 0;
     margin: 0;
 }
 

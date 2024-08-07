@@ -43,7 +43,7 @@ export default function AllQuotes() {
                                     <p className={styles["quote-author"]}>{quote.author}</p>
 
                                     {userId === quote._ownerId &&
-                                        <div className={styles["btn-container"]}>
+                                           <div className={styles["btn-container"]}>
                                             <p className={styles["edit-icon"]}><i className="fa-solid fa-pen-to-square"></i></p>
                                             <p className={styles["trash-icon"]}><i className="fa-solid fa-trash" onClick={() => onDeleteQuoteHandler(quote)}></i></p>
                                         </div>

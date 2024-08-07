@@ -3,7 +3,7 @@ import styles from './AllReviews.module.css';
 import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { getAllReviews, createReview, deleteReview } from '../../services/reviewService';
+import { getAllReviews, createReview } from '../../services/reviewService';
 import useForm from '../../hooks/useForm';
 import AuthenticationContext from '../../contexts/authenticationContext';
 import { hasLoggedUser } from '../../utils/hasUser';
@@ -30,14 +30,6 @@ export default function AllReviews() {
     };
 
     const { values, onChangeHandler, onSubmitHandler } = useForm(addReviewHandler, {});
-
-    const onDeleteReviewHandler = async (_id) => {
-        const isConfirmed = confirm("Are you sure you want to delete this review?")
-        if (isConfirmed) {
-            await deleteReview(_id);
-            setReviews(reviews => reviews.filter((el) => el._id !== _id));
-        }
-    }
 
     return (
         < section className={styles["all-reviews"]} >
@@ -76,7 +68,7 @@ export default function AllReviews() {
                             {userId === _ownerId &&
                                 <div className={styles["btn-container"]}>
                                     <p className={styles["edit-icon"]}><i className="fa-solid fa-pen-to-square"></i></p>
-                                    <p className={styles["trash-icon"]}><i className="fa-solid fa-trash" onClick={()=>onDeleteReviewHandler(_id)}></i></p>
+                                    <p className={styles["trash-icon"]}><i className="fa-solid fa-trash" ></i></p>
                                 </div>
                             }
                         </div>

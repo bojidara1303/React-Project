@@ -66,14 +66,9 @@
 
 .btn-container {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     padding-top: 10px;
     gap: 15px;
-}
-
-.edit-icon,
-.trash-icon{
-    margin: 0;
 }
 
 .btn-container i{

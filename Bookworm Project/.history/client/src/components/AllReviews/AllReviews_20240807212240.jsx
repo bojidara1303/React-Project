@@ -31,11 +31,11 @@ export default function AllReviews() {
 
     const { values, onChangeHandler, onSubmitHandler } = useForm(addReviewHandler, {});
 
-    const onDeleteReviewHandler = async (_id) => {
+    const onDeleteReviewHandler = async (review) => {
         const isConfirmed = confirm("Are you sure you want to delete this review?")
         if (isConfirmed) {
-            await deleteReview(_id);
-            setReviews(reviews => reviews.filter((el) => el._id !== _id));
+            await deleteReview(review._id);
+            // setReviews(reviews => reviews.filter((el) => el._id !== review._id));
         }
     }
 
@@ -76,7 +76,7 @@ export default function AllReviews() {
                             {userId === _ownerId &&
                                 <div className={styles["btn-container"]}>
                                     <p className={styles["edit-icon"]}><i className="fa-solid fa-pen-to-square"></i></p>
-                                    <p className={styles["trash-icon"]}><i className="fa-solid fa-trash" onClick={()=>onDeleteReviewHandler(_id)}></i></p>
+                                    <p className={styles["trash-icon"]}><i className="fa-solid fa-trash" onClick={()=>onDeleteReviewHandler(review)}></i></p>
                                 </div>
                             }
                         </div>

@@ -35,7 +35,7 @@ function App() {
           <Route path='*' element={<Error />} />
 
           <Route element={<RouteGuards />}>
-            <Route path='/quotes/add-quote' element={<AddQuote />}></Route>
+          <Route path='/quotes/add-quote' element={<AddQuote />}></Route>
             <Route path='/add-book' element={<AddBook />}></Route>
             <Route path='/books/:bookId/edit' element={<EditBook />}></Route>
             <Route path='/logout' element={<Logout />}></Route>

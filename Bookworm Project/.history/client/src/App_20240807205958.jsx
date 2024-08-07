@@ -31,11 +31,11 @@ function App() {
           <Route path='/login' element={<Login />}></Route>
           <Route path='/books' element={<AllBooks />}></Route>
           <Route path='/books/:bookId' element={<BookDetails />}></Route>
+          <Route path='/quotes/add-quote' element={<AddQuote />}></Route>
           <Route path='/quotes' element={<AllQuotes />}></Route>
           <Route path='*' element={<Error />} />
 
           <Route element={<RouteGuards />}>
-            <Route path='/quotes/add-quote' element={<AddQuote />}></Route>
             <Route path='/add-book' element={<AddBook />}></Route>
             <Route path='/books/:bookId/edit' element={<EditBook />}></Route>
             <Route path='/logout' element={<Logout />}></Route>

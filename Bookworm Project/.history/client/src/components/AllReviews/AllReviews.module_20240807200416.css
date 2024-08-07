@@ -78,7 +78,7 @@
     border-radius: 10px;
     border: 1px solid rgb(40, 180, 114);
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 15px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -87,22 +87,13 @@
 .container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 15px;
 }
 
 .btn-container{
     display: flex;
-    padding-right: 10px;
+    justify-content: space-between;
     gap: 15px;
-}
-
-.btn-container i{
-    color: rgb(40, 180, 114);
-    font-size: 20px;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
 }
 
 .review-content {
