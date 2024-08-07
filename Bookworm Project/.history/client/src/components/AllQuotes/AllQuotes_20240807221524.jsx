@@ -1,7 +1,7 @@
 import styles from './AllQuotes.module.css';
 
 import { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { getAllQuotes, deleteQuote } from '../../services/quoteService';
 import { hasLoggedUser } from '../../utils/hasUser';
@@ -11,6 +11,7 @@ import AuthenticationContext from '../../contexts/authenticationContext';
 export default function AllQuotes() {
     const [quotes, setQuotes] = useState([]);
     const { userId } = useContext(AuthenticationContext);
+    // const { quoteId } = useParams();
 
     useEffect(() => {
         getAllQuotes()

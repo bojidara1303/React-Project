@@ -1,7 +1,7 @@
 import styles from './AllQuotes.module.css';
 
 import { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { getAllQuotes, deleteQuote } from '../../services/quoteService';
 import { hasLoggedUser } from '../../utils/hasUser';
@@ -11,6 +11,7 @@ import AuthenticationContext from '../../contexts/authenticationContext';
 export default function AllQuotes() {
     const [quotes, setQuotes] = useState([]);
     const { userId } = useContext(AuthenticationContext);
+    // const { quoteId } = useParams();
 
     useEffect(() => {
         getAllQuotes()
@@ -45,7 +46,7 @@ export default function AllQuotes() {
 
                                     {userId === quote._ownerId &&
                                         <div className={styles["btn-container"]}>
-                                            <Link to={`/quotes/${quote._id}/edit`}> <p className={styles["edit-icon"]}><i className="fa-solid fa-pen-to-square"></i></p></Link>
+                                            <Link to={`/books/${quote._id}/edit`}> <p className={styles["edit-icon"]}><i className="fa-solid fa-pen-to-square"></i></p></Link>
                                             <p className={styles["trash-icon"]}><i className="fa-solid fa-trash" onClick={() => onDeleteQuoteHandler(quote)}></i></p>
                                         </div>
                                     }

@@ -45,18 +45,3 @@ export const deleteQuote = async (quoteId) => {
     const result = await response.json();
     return result
 };
-
-export const editQuote = async (quoteId, quoteData) => {
-
-    const response = await fetch(`${BASE_URL}/${quoteId}`, {
-        method: 'PUT',
-        headers: {
-            'content-type': 'application/json',
-            'X-Authorization': hasLoggedUser()
-        },
-        body: JSON.stringify(quoteData)
-    })
-
-    const result = await response.json();
-    return result;
-}
