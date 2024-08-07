@@ -1,0 +1,27 @@
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    padding: 0 22px;
+}
+
+.book-catalog {
+    padding: 10px 0 100px;
+    background-color: white;
+}
+
+.book-catalog-heading {
+    text-align: center;
+    color: rgb(40, 180, 114);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.no-books{
+  text-align: center;
+  padding: 28px 0 249px;
+  margin: 0 auto;
+}
+

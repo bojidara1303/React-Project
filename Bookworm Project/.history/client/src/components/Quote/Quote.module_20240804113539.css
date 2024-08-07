@@ -1,0 +1,67 @@
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+
+.single-quote {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid rgb(40, 180, 114);
+    border-radius: 15px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.left-side img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.quote-author {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(40, 180, 114);
+    margin: 0;
+    padding: 0;
+}
+
+/* .del-quote {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 50px 0 50px;
+} */
+
+.name-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trash-icon i {
+    color: rgb(40, 180, 114);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.fa-trash{
+    color: rgb(40, 180, 114);
+    font-size: 20px;
+}
