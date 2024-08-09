@@ -1,0 +1,39 @@
+.news {
+    display: flex;
+    padding: 60px 0;
+    gap: 50px;
+    justify-content: center;
+}
+
+.news article {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.read-more {
+    border: none;
+    background-color: rgb(40, 180, 114);
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.read-more-link {
+    text-decoration: none;
+    color: white;
+}
+
+.news-title {
+    font-weight: bold;
+    color: rgb(40, 180, 114);
+    font-size: 22px;
+}
+
+.news-content {
+    font-size: 14px;
+    text-align: justify;
+}

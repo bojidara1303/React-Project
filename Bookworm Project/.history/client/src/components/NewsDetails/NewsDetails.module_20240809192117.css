@@ -1,0 +1,27 @@
+.news-details{
+    display: flex;
+
+    justify-content: center;
+}
+
+.news-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 159px;
+}
+
+.news-content {
+    width: 900px;
+    border-radius: 10px;
+    border: 1px solid rgb(40, 180, 114);
+    margin: 30px 0 50px 0;
+    padding: 15px;
+}
+
+
+.news-heading {
+    text-align: center;
+    padding: 30px 0 30px;
+    color: rgb(40, 180, 114);
+    font-weight: 700;
+}
