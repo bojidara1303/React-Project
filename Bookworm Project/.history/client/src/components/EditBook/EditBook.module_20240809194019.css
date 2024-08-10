@@ -47,7 +47,8 @@
     margin-bottom: 15px;
     padding: 8px 120px 90px 10px;
     border-radius: 15px;
-    border: 1px solid rgb(40, 180, 114);
+    border-width: 1px;
+    border-color: rgb(40, 180, 114);
 }
 
 .edit-book-btn {

@@ -2,14 +2,14 @@
     display: flex;
     padding: 60px 0;
     gap: 50px;
-    margin-left: 90px;
+    justify-content: center;
 }
 
 .news-container article {
     width: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: center; */
     background-color: white;
 }
 
