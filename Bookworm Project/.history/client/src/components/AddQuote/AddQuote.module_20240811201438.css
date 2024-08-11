@@ -1,0 +1,75 @@
+.add-quote-container {
+    padding: 40px 0 100px;
+}
+
+.add-quote {
+    display: flex;
+    width: 500px;
+    height: 600px;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+    border: 1px solid rgb(40, 180, 114);
+    border-radius: 15px;
+    padding: 30px 0px;
+    background-color: white;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+}
+
+.add h1 {
+    color: rgb(40, 180, 114);
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.add-quote label {
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.add-quote input {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    padding: 5px 0px 5px 8px;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid rgb(40, 180, 114);
+}
+
+.add-quote textarea {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    padding: 5px 0px 5px 8px;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    border: 1px solid rgb(40, 180, 114);
+}
+
+.add-quote input::placeholder,
+.add-quote textarea::placeholder {
+    font-size: 13px;
+}
+
+.add-quote label,
+.add-quote input {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-quote-btn {
+    background-color: rgb(40, 180, 114);
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    margin: 0px auto;
+    font-size: 15px;
+}

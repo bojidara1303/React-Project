@@ -1,0 +1,53 @@
+import { useState } from "react";
+
+const [emailError, setEmailError] = useState('');
+const [passwordError, setPasswordError] = useState('');
+const [confirmPasswordError, setConfirmPasswordError] = useState('');
+const [usernameError, setUsernameError] = useState('');
+
+const { values } = useForm({
+    email: '',
+    password: '',
+    username: '',
+    "confirm-password": ''
+});
+
+export const emailValidator = () => {
+    if (values.email === '') {
+        setEmailError('Email is required!')
+    } else if (!new RegExp(/\S+@\S+\.\S+/).test(values.email)) {
+        setEmailError('Incorrect email format!')
+    } else {
+        setEmailError('')
+    }
+};
+
+
+export const passwordValidator = () => {
+    if (values.password === '') {
+        setPasswordError('Password is required!')
+    } else if (password.length < 6) {
+        setPasswordError('Password must have a minimum 6 characters')
+    } else {
+        setPasswordError('')
+    }
+};
+
+export const usernameValidator = () => {
+    if (values.username === '') {
+        setUsernameError('Username is required!')
+    } else {
+        setUsernameError('')
+    }
+};
+
+export const confirmPasswordValidator = () => {
+    if (values["confirm-password"] !== password) {
+        setConfirmPasswordError('Passwords do not match!')
+    } else {
+        setConfirmPasswordError('')
+    }
+};
+
+
+
