@@ -20,12 +20,13 @@ export default function BookDetails() {
     }, [bookId]);
 
     const onDeleteBookClickHandler = async () => {
-        try {
+        const isConfirmed = confirm(`Are you sure you want to delete ${book.title}?`)
+
+        if (isConfirmed) {
             await deleteBook(bookId)
             navigate('/books')
-        } catch (error) {
-            alert(error)
         }
+
     }
 
     const isOwner = userId === book._ownerId;

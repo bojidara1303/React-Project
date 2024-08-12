@@ -12,8 +12,8 @@ export default function AddQuote() {
         try {
             await createQuote(values);
             navigate('/quotes')
-        } catch (error) {
-            alert(error);
+        } catch (err) {
+            console.log(err);
         }
     };
 

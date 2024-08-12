@@ -32,10 +32,10 @@ export default function AllReviews() {
     const { values, onChangeHandler, onSubmitHandler } = useForm(addReviewHandler, {});
 
     const onDeleteReviewHandler = async (_id) => {
-        try {
+       try {
             await deleteReview(_id);
             setReviews(reviews => reviews.filter((el) => el._id !== _id));
-        } catch (error) {
+        } catch(error){
             alert(error)
         }
     }

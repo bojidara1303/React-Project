@@ -26,6 +26,7 @@ export default function BookDetails() {
         } catch (error) {
             alert(error)
         }
+
     }
 
     const isOwner = userId === book._ownerId;

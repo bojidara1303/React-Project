@@ -21,9 +21,9 @@ export default function AllQuotes() {
         try {
             await deleteQuote(quote._id);
             setQuotes(quotes => quotes.filter((el) => el._id !== quote._id));
-        } catch (error) {
+        } catch (error {
             alert(error)
-        }
+        })
     }
 
 

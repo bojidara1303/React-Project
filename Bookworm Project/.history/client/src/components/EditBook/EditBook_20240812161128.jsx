@@ -23,7 +23,10 @@ export default function EditBook() {
         getOneBook(bookId)
             .then(result => {
                 setBook(result)
-            });
+            })
+            .catch(error =>{
+                alert(errot)
+            })
     }, [bookId])
 
     const editBookSubmitHandler = async (e) => {
@@ -35,7 +38,7 @@ export default function EditBook() {
             await editBook(bookId, values);
             navigate('/books')
         } catch (error) {
-            alert(error);
+            console.log(error);
         }
     }
 

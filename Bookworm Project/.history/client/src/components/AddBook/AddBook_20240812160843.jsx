@@ -13,8 +13,8 @@ export default function AddBook() {
         try {
             await createBook(values);
             navigate('/books')
-        } catch (error) {
-            alert(error);
+        } catch (err) {
+            alert(err);
         }
     };
 

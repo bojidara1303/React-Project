@@ -35,7 +35,7 @@ export default function EditBook() {
             await editBook(bookId, values);
             navigate('/books')
         } catch (error) {
-            alert(error);
+            console.log(error);
         }
     }
 

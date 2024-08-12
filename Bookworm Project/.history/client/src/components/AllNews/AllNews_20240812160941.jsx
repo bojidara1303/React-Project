@@ -12,6 +12,9 @@ export default function AllNews() {
     useEffect(() => {
         getAllNews()
             .then(result => setAllNews(result))
+            .catch(error => {
+                alert(error);
+            })
     }, [])
 
     return (

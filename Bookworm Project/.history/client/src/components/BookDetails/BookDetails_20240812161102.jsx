@@ -17,15 +17,19 @@ export default function BookDetails() {
     useEffect(() => {
         getOneBook(bookId)
             .then(setBook)
+            .catch(error => {
+                alert(error)
+            })
     }, [bookId]);
 
     const onDeleteBookClickHandler = async () => {
-        try {
+        const isConfirmed = confirm(`Are you sure you want to delete ${book.title}?`)
+
+        if (isConfirmed) {
             await deleteBook(bookId)
             navigate('/books')
-        } catch (error) {
-            alert(error)
         }
+
     }
 
     const isOwner = userId === book._ownerId;

@@ -11,6 +11,9 @@ export default function AllBooks() {
     useEffect(() => {
         getAllBooks()
             .then(result => setBooks(result))
+            .catch(error => {
+                alert(error);
+            })
     }, []);
 
     return (

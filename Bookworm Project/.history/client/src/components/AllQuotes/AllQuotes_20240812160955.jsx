@@ -15,17 +15,18 @@ export default function AllQuotes() {
     useEffect(() => {
         getAllQuotes()
             .then(result => setQuotes(result))
+            .catch(error => {
+                alert(error);
+            })
     }, []);
 
     const onDeleteQuoteHandler = async (quote) => {
-        try {
+        const isConfirmed = confirm("Are you sure you want to delete this quote?")
+        if (isConfirmed) {
             await deleteQuote(quote._id);
             setQuotes(quotes => quotes.filter((el) => el._id !== quote._id));
-        } catch (error) {
-            alert(error)
         }
     }
-
 
     return (
         <>
