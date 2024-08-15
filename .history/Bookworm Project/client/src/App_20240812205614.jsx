@@ -19,7 +19,6 @@ import RouteGuards from './components/RouteGuards/RouteGuards';
 import EditQuote from './components/EditQuote/EditQuote';
 import AllNews from './components/AllNews/AllNews';
 import NewsDetails from './components/NewsDetails/NewsDetails';
-import ContactUs from './components/ContactUs/ContactUs';
 
 
 function App() {
@@ -38,8 +37,6 @@ function App() {
           <Route path='/quotes' element={<AllQuotes />}></Route>
           <Route path='/news' element={<AllNews />}></Route>
           <Route path='/news/:newsId' element={<NewsDetails />}></Route>
-          <Route path='/contact-us' element={<ContactUs />}></Route>
-
           <Route path='*' element={<Error />} />
 
           <Route element={<RouteGuards />}>

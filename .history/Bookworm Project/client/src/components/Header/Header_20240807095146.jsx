@@ -18,7 +18,7 @@ export default function Header() {
                     <li><Link className={styles["nav-link"]} to="/">Home</Link></li>
                     <li><Link className={styles["nav-link"]} to="/quotes">Quotes</Link></li>
                     <li><Link className={styles["nav-link"]} to="/books">Books</Link></li>
-
+                    
                     {isAuth && (
                         <div className={styles["isAuthenticated"]}>
                             <li><Link className={styles["nav-link"]} to="/add-book">Add Book</Link></li>
@@ -30,8 +30,8 @@ export default function Header() {
                             <li><Link className={styles["nav-link"]} to="/login">Login</Link></li>
                             <li><Link className={styles["nav-link"]} to="/register">Register</Link></li>
                         </div>
+
                     )}
-                    <li><Link className={styles["nav-link"]} to="/contact-us">Contact Us</Link></li>
                 </ul>
             </nav>
         </header>

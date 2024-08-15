@@ -1,0 +1,16 @@
+.contact-us-heading {
+    text-align: center;
+    color: rgb(40, 180, 114);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.map iframe{
+    width: 450px;
+    height: 450px;
+}
+
+.contact-us-container{
+    display: flex;
+}

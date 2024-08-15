@@ -1,0 +1,45 @@
+.contact-us {
+    padding-bottom: 50px;
+}
+
+.contact-us-heading {
+    text-align: center;
+    color: rgb(40, 180, 114);
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.map iframe {
+    width: 600px;
+    height: 400px;
+}
+
+.contact-us-container {
+    display: flex;
+    margin: 0 80px;
+    padding: 30px;
+    border: 1px solid rgb(40, 180, 114);
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info article {
+    padding: 20px 0;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(40, 180, 114);
+    margin-bottom: 10px;
+}
