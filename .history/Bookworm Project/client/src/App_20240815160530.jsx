@@ -40,7 +40,6 @@ function App() {
           <Route path='/news' element={<AllNews />}></Route>
           <Route path='/news/:newsId' element={<NewsDetails />}></Route>
           <Route path='/contact-us' element={<ContactUs />}></Route>
-          <Route path='/our-mission' element={<OurMission />}></Route>
 
           <Route path='*' element={<Error />} />
 

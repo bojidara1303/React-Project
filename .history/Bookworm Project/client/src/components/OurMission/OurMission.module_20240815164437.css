@@ -1,0 +1,27 @@
+.our-mission {
+    position: relative;
+    margin: 0 250px;
+    text-align: center;
+}
+
+.our-mission img {
+    width: 1000px;
+    width: 797px;
+    padding: 20px 0 30px 0;
+}
+
+.our-mission-heading{
+    position: absolute;
+    top: 70px;
+    left: 320px;
+    font-weight: bold;
+    /* color: rgb(40, 180, 114); */
+}
+
+.our-mission-text{
+    position: absolute;
+    width: 550px;
+    top: 140px;
+    left: 155px;
+    font-size: 18px;
+}

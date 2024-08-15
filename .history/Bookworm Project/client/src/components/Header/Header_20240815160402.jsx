@@ -19,7 +19,6 @@ export default function Header() {
                     <li><Link className={styles["nav-link"]} to="/quotes">Quotes</Link></li>
                     <li><Link className={styles["nav-link"]} to="/books">Books</Link></li>
                     <li><Link className={styles["nav-link"]} to="/contact-us">Contact Us</Link></li>
-                    <li><Link className={styles["nav-link"]} to="/our-mission">Our Mission</Link></li>
 
                     {isAuth && (
                         <div className={styles["isAuthenticated"]}>
